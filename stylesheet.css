@@ -58,8 +58,9 @@ header {
                     top: 0;
                     left: 0;
                     height: 100%;
-                    width: 100%;
+                    width: 101%;
                     z-index: -1;
+                    pointer-events: none;
                     transform: skewX(-45deg); }
                     header .header-right ul li:first-child a:before {
                         background: #08619E; }
