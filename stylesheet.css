@@ -3,9 +3,6 @@ body {
     font-family: 'Open Sans', sans-serif; }
 .page-wrap {
     background: #FFF; }
-a {
-    opacity: .7;
-    color: #141415; }
 p {
     letter-spacing: .05em;
     font-weight: 300;
@@ -125,5 +122,8 @@ a.button {
     box-shadow: 0px 20px 47.5px 2.5px rgba(0, 0, 0, 0.12); }
 footer {
     background: url('img/bg-footer.jpg') center bottom no-repeat;
-    background-size: cover;
-}
+    background-size: cover; }
+
+footer a {
+opacity: .7;
+color: #141415; }
