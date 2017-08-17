@@ -117,9 +117,36 @@ opacity: .9; }
 footer {
     background: url('img/bg-footer.jpg') center bottom no-repeat;
     background-size: cover; }
-    footer a {
+    footer p a {
         opacity: .7;
         color: #141415; }
+        footer ul {
+            padding: 0;
+            margin: 0;
+            list-style: none; }
+
+        footer ul li.menu-head {
+            font-size: 14px;
+            font-weight: 900;
+            color: #38383A;
+            opacity: .8;
+            letter-spacing: .1em;
+            margin-bottom: 1em;
+            text-transform: uppercase; }
+            footer ul li a {
+                font-size: 12px;
+                color: #141415;
+                font-weight: 300;
+                line-height: 2em;
+                text-transform: uppercase;
+                letter-spacing: .1em; }
+                footer .copyright {
+                    font-size: 10px;
+                    font-weight: 400;
+                    opacity: .7;
+                    letter-spacing: .1em;
+                    margin: 1em 0 100px; }
+
 
 .button-drop,
 .button-drop .button-bg {
