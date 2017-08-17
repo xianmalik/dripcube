@@ -14,15 +14,7 @@ function initBt1() {
   var tl = new TimelineLite();
   var tl2 = new TimelineLite();
 
-  var btTl = new TimelineLite({
-    paused: true,
-    onUpdate: function() {
-      filter.setAttribute('x', 0);
-    },
-    onComplete: function() {
-      bt1c.style.filter = 'none';
-    }
-  });
+  var btTl = new TimelineLite({ paused: true });
 
   tl.to($circlesTopLeft, 1.2, { x: -25, y: -25, scaleY: 2, ease: SlowMo.ease.config(0.1, 0.7, false) });
   tl.to($circlesTopLeft[0], 0.1, { scale: 0.2, x: '+=6', y: '-=2' });
@@ -59,4 +51,16 @@ function initBt1() {
   bt1.addEventListener('mouseover', function() {
     btTl.restart();
   });
+}
+var elem = document.getElementById('hamburger-menu');
+elem.addEventListener('touchstart', toggleMenu);
+elem.addEventListener('click', toggleMenuDesktop);
+
+function toggleMenu (){
+    [].forEach.call(document.querySelectorAll('.header-menu'), function(el){ el.classList.toggle('hidden'); });
+    elem.removeEventListener('click', toggleMenuDesktop);
+}
+function toggleMenuDesktop (){
+    [].forEach.call(document.querySelectorAll('.header-menu'), function(el){ el.classList.toggle('hidden'); });
+    elem.removeEventListener('touchstart', toggleMenu);
 }

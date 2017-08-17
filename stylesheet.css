@@ -5,10 +5,9 @@
   box-sizing: border-box; }
 
 body {
-    background: #F7F7F7;
     font-family: 'Open Sans', sans-serif; }
 .page-wrap {
-    background: #FFF; }
+    background: #fafafa; }
 p {
     font-weight: 300;
     font-size: 16px;
@@ -28,9 +27,6 @@ section {
     background-size: cover !important; }
 section.flex-wrap {
     padding: 70px 0; }
-section.flex-wrap .wrap .row {
-    display: flex;
-    align-items: center; }
 header nav {
     background: #FFF;
     box-shadow: 0 5px 14.25px .75px rgba(0, 0, 0, 0.04); }
@@ -118,13 +114,12 @@ footer {
     background: url('img/bg-footer.jpg') center bottom no-repeat;
     background-size: cover; }
     footer p a {
-        opacity: .7;
+        opacity: .5;
         color: #141415; }
         footer ul {
             padding: 0;
             margin: 0;
             list-style: none; }
-
         footer ul li.menu-head {
             font-size: 14px;
             font-weight: 900;
@@ -140,12 +135,13 @@ footer {
                 line-height: 2em;
                 text-transform: uppercase;
                 letter-spacing: .1em; }
+                footer img { margin-right: 10px; }
                 footer .copyright {
                     font-size: 10px;
                     font-weight: 400;
                     opacity: .7;
                     letter-spacing: .1em;
-                    margin: 1em 0 100px; }
+                    margin: 1em 0 80px; }
 
 
 .button-drop,
@@ -230,3 +226,27 @@ footer {
     -moz-filter: hue-rotate(360deg);
     -ms-filter: hue-rotate(360deg);
     filter: hue-rotate(360deg); } }
+
+@media screen and (max-width: 768px) {
+    #Slider .slider-bg {
+        background-position: 10% 0; }
+    a.logo {
+        text-align: center;
+        display: table;
+        width: 100%;
+        padding: 1em 0; }
+    header .wrap { width: 100%; }
+    header nav ul li { display: block; }
+    header .header-left,
+    header .header-right { float: none; }
+    header .header-right ul li a:before { transform: none; }
+    .hamburger-menu {
+        width: 30px;
+        float: right;
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        right: 25px;
+        transform: translateY(-50%);
+        opacity: .7; }
+}
