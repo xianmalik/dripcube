@@ -64,26 +64,16 @@ header {
                 letter-spacing: .1em; }
             header .header-right ul li a {
                 z-index: 1;
-                color: #FFF;
                 font-weight: 900;
-                min-width: 9em;
                 font-size: 12px;
                 text-align: center; }
-                header .header-right ul li a:before {
-                    content: '';
-                    position: absolute;
-                    background: #2481C0;
-                    top: 0;
-                    left: 0;
-                    height: 100%;
-                    width: 101%;
-                    z-index: -1;
-                    pointer-events: none;
-                    transform: skewX(-45deg); }
-                    header .header-right ul li:first-child a:before {
-                        background: #08619E; }
-                    header .header-right ul li:last-child a:before {
-                        background: #A7A7A7; }
+            header .header-right ul li:last-child a {
+                padding: 0; }
+            header .header-right ul li a span {
+                color: #FFF;
+                padding: .8em 1.5em;
+                display: inline;
+                background: #37b3e6; }
 #Slider {
     margin: auto;
     height: 100vh;
