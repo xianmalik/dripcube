@@ -29,51 +29,46 @@ section {
     background-size: cover !important; }
 section.flex-wrap {
     padding: 70px 0; }
-header nav {
-    background: #FFF;
-    box-shadow: 0 5px 14.25px .75px rgba(0, 0, 0, 0.04); }
-    .header-left {
-        float: left; }
-    .header-right {
-        float: right; }
-    header ul li {
-        display: inline-block; }
-        header ul li a {
-            display: block;
-            color: #38383A;
-            line-height: 80px;
-            padding: 0 15px;
-            font-size: 10px;
-            text-transform: uppercase; }
-            header ul li a.logo img {
-                vertical-align: middle; }
 header {
     overflow: hidden;
     position: relative;
     display: block; }
+    .header-left {
+        float: left; }
+    .header-right {
+        float: right; }
     header nav {
+        background: #FFF;
         position: absolute;
         width: 100%;
+        box-shadow: 0 5px 14.25px .75px rgba(0, 0, 0, 0.04);
         z-index: 9999; }
     header nav .wrap {
         overflow: visible;
         display: table; }
         header ul {
             font-size: 0; }
+        header ul li {
+            display: inline-block; }
             header ul li a {
-                letter-spacing: .1em; }
+                display: block;
+                color: #38383A;
+                line-height: 80px;
+                padding: 0 15px;
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: .2em; }
             header .header-right ul li a {
                 z-index: 1;
-                font-weight: 900;
-                font-size: 12px;
-                text-align: center; }
-            header .header-right ul li:last-child a {
-                padding: 0; }
+                text-align: center;
+                padding-right: 0; }
             header .header-right ul li a span {
                 color: #FFF;
                 padding: .8em 1.5em;
                 display: inline;
                 background: #00a6eb; }
+            header ul li a.logo img {
+                vertical-align: middle; }
 #Slider {
     margin: auto;
     height: 100vh;
@@ -97,13 +92,13 @@ header {
         #Slider .slider-content .wrap {
             overflow: visible;
             display: table; }
+        #Slider h1 {
+            font-size: 48px;
+            line-height: 48px;
+            color: #00a6eb;
+            opacity: .9; }
         #Slider .slider-content p {
             opacity: .7; }
-#Slider h1 {
-font-size: 48px;
-line-height: 48px;
-color: #08619E;
-opacity: .9; }
 footer {
     background: url('img/bg-footer.jpg') center bottom no-repeat;
     background-size: cover; }
