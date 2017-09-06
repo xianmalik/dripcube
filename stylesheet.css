@@ -57,7 +57,7 @@ header {
                 padding: 0 15px;
                 font-size: 12px;
                 text-transform: uppercase;
-                letter-spacing: .2em; }
+                letter-spacing: .1em; }
             header .header-right ul li a {
                 z-index: 1;
                 text-align: center;
@@ -68,7 +68,8 @@ header {
                 display: inline;
                 background: #00a6eb; }
             header ul li a.logo img {
-                vertical-align: middle; }
+                vertical-align: middle;
+                height: 50px; }
 #Slider {
     margin: auto;
     height: 100vh;
