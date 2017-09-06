@@ -5,9 +5,11 @@
   box-sizing: border-box; }
 
 body {
-    font-family: 'Open Sans', sans-serif; }
-.page-wrap {
+    font-family: 'Open Sans', sans-serif;
     background: #fafafa; }
+.content-wrap {
+    background: #fff;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .05); }
 p {
     font-weight: 300;
     font-size: 16px;
@@ -83,9 +85,11 @@ header {
                     header .header-right ul li:last-child a:before {
                         background: #A7A7A7; }
 #Slider {
+    margin: auto;
     height: 100vh;
+    width: 100%;
     max-height: 800px;
-    width: 100%; }
+    max-width: 1366px; }
     #Slider .slider-bg {
         position: absolute;
         top: 0;

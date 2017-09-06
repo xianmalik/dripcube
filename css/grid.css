@@ -12,13 +12,13 @@ body {
     margin: 0;
     padding: 0;
     width: 100%; }
-    .page-wrap {
+    .wrap,
+    .content-wrap {
         margin: auto;
         max-width: 1366px; }
     .wrap {
         overflow: auto;
         width: 90%;
-        max-width: 1250px;
         margin: 0 auto; }
         .row {
             position: relative;
