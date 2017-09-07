@@ -64,3 +64,23 @@ function toggleMenuDesktop (){
     [].forEach.call(document.querySelectorAll('.header-menu'), function(el){ el.classList.toggle('hidden'); });
     elem.removeEventListener('touchstart', toggleMenu);
 }
+jQuery(document).ready(function($){
+    $(window).scroll(function(){
+        var elem = $('#parallex-section');
+        var scrollPos = $(window).scrollTop() - elem.offset().top,
+            scrollEnd = elem.offset().top + elem.height() - elem.find('.wrap').height() - 140;
+            console.log(elem.find('.wrap').height());
+        if( scrollPos > 0  && scrollPos <= scrollEnd){
+            elem.addClass("active").find('.wrap').css('transform', 'translateY(' + scrollPos + 'px)');
+            if( scrollPos > elem.height()/2 ){
+                elem.addClass('animate');
+            } else {
+                elem.removeClass('animate');
+            }
+        } else if( scrollPos <= 0 ){
+            elem.removeClass("active").find('.wrap').css('transform', 'translateY(0)');
+        } else {
+            elem.removeClass("active").find('.wrap').css('transform', 'translateY('+scrollEnd+'px)');
+        }
+    });
+});

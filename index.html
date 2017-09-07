@@ -68,16 +68,42 @@
         </header>
 
         <div class="content-wrap">
-            <section class="flex-wrap" style="background: url('img/bg-1.jpg') center right no-repeat;">
-                <div class="wrap">
+            <section class="flex-wrap" id="parallex-section">
+                <div class="wrap" style="width: 100%; padding: 70px 5%;">
                     <div class="row">
                         <div class="col col-5 text-center">
-                            <img src="img/schedule-phone.png" alt="Create Irrigation Schedules" style="margin: 30px 0;">
+                            <div class="sliding-screens">
+                                <div class="screens-wrap">
+                                    <div class="first-screen">
+                                        <img src="img/schedule-phone-1.png">
+                                    </div>
+                                    <div class="second-screen">
+                                        <img src="img/schedule-phone-2.png">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col col-7">
+                        <div class="col col-7 first-cont">
                             <h2>
                                 Create irrigation<br>
                                 schedules automatically !
+                            </h2>
+                            <p>
+                                Input simple information about your garden, DripCube schedules <br>
+                                duration and frequency of irrigation for each zone. No more guess <br>
+                                work. Say good bye to over or under watering. Your garden will <br>
+                                thank you by becoming healthier and prettier.
+                            </p>
+                            <p>
+                                You can of course decide between full automation or full manual <br>
+                                or something in between for each zondepending on your <br>
+                                preference and the special needs of your garden.
+                            </p>
+                        </div>
+                        <div class="col col-7 second-cont">
+                            <h2>
+                                DUMMY<br>
+                                Content 2
                             </h2>
                             <p>
                                 Input simple information about your garden, DripCube schedules <br>
@@ -222,6 +248,7 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="stylesheet.css">
 
+    <script src="js/jquery.min.js"></script>
 	<script src="js/TweenMax.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

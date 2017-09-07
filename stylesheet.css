@@ -8,8 +8,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: #fafafa; }
 .content-wrap {
-    background: #fff;
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .05); }
+    /*box-shadow: 0 0 20px 5px rgba(0, 0, 0, .05);*/
+    background: #fff; }
 p {
     font-weight: 300;
     font-size: 16px;
@@ -40,8 +40,8 @@ header {
     header nav {
         background: #FFF;
         position: absolute;
+        border-bottom: 1px solid #fbfbfb;
         width: 100%;
-        box-shadow: 0 5px 14.25px .75px rgba(0, 0, 0, 0.04);
         z-index: 9999; }
     header nav .wrap {
         overflow: visible;
@@ -204,6 +204,48 @@ footer {
     .button-drop .circle.bottom-right {
       bottom: 40%;
       right: 27%; }
+
+section#parallex-section {
+    background-repeat: no-repeat;
+    min-height: 300vh;
+    padding: 0 0 100vh;
+    background-size: contain !important;
+    background-position: center 0% !important; }
+section#parallex-section .wrap {
+    min-height: 100vh;
+    display: block;
+    background-image: url('img/bg-1.jpg'); }
+section#parallex-section.animate .wrap .first-cont,
+section#parallex-section .wrap .second-cont {
+    position: absolute;
+    opacity: 0; }
+section#parallex-section .wrap .first-cont,
+section#parallex-section.animate .wrap .second-cont {
+    position: relative;
+    opacity: 1; }
+section#parallex-section:not(.animate) .wrap .first-cont,
+section#parallex-section.animate .wrap .second-cont {
+    transition: opacity 1s ease; }
+.sliding-screens {
+    background: url('img/schedule-phone-wrap.png') center no-repeat;
+    background-size: contain !important;
+    display: inline-block;
+    padding: 11% 3.5% 14%;
+    position: relative; }
+    .sliding-screens .screens-wrap {
+        overflow: hidden; }
+    .sliding-screens .screens-wrap div {
+        transition: all .5s ease; }
+    .sliding-screens div.second-screen {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateX(100%); }
+    section.animate .sliding-screens div.first-screen {
+        transform: translateX(-100%); }
+    section.animate .sliding-screens div.second-screen {
+        transform: translateX(0); }
+
 
 @keyframes hue-rotate {
   from {
