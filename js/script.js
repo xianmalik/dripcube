@@ -52,20 +52,17 @@ function initBt1() {
     btTl.restart();
   });
 }
-var elem = document.getElementById('hamburger-menu');
-elem.addEventListener('touchstart', toggleMenu);
-elem.addEventListener('click', toggleMenuDesktop);
 
-function toggleMenu (){
-    [].forEach.call(document.querySelectorAll('.header-menu'), function(el){ el.classList.toggle('hidden'); });
-    elem.removeEventListener('click', toggleMenuDesktop);
-}
-function toggleMenuDesktop (){
-    [].forEach.call(document.querySelectorAll('.header-menu'), function(el){ el.classList.toggle('hidden'); });
-    elem.removeEventListener('touchstart', toggleMenu);
-}
 jQuery(document).ready(function($){
+    $('svg .cls-1').delay(100).css('transform', 'unset');
+    $('svg .cls-2').delay(100).css('stroke-dashoffset', '0');
+    $('.hamburger-menu').on('click', function(){
+        $('.header-menu').toggleClass('hidden');
+    });
     $(window).scroll(function(){
+        if( $(window).scrollTop() > ( $('#Blops').offset().top - $(window).height() ) ){
+            $('#Blops').addClass('animate');
+        }
         var elem = $('#parallex-section');
         var scrollPos = $(window).scrollTop() - elem.offset().top,
             scrollEnd = elem.offset().top + elem.height() - elem.find('.wrap').height() - 140;
