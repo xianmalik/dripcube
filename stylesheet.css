@@ -26,7 +26,7 @@ h2 {
     margin: 0 0 .5em; }
 section {
     padding: 150px 0 180px;
-    background-size: cover !important; }
+    background-size: cover; }
 section.flex-wrap {
     padding: 70px 0; }
 header {
@@ -39,7 +39,7 @@ header {
         float: right; }
     header nav {
         background: #FFF;
-        position: absolute;
+        position: fixed;
         border-bottom: 1px solid #fbfbfb;
         width: 100%;
         z-index: 9999; }
@@ -60,7 +60,6 @@ header {
                 letter-spacing: .1em; }
             header .header-right ul li a {
                 z-index: 1;
-                text-align: center;
                 padding-right: 0; }
             header .header-right ul li a span {
                 color: #FFF;
@@ -84,7 +83,6 @@ header {
         width: 100%; }
         #Slider .slider-bg {
             background-color: #00a6eb;
-            /*background: url('img/slider-bg.jpg') center no-repeat;*/
             background-size: cover; }
     #Slider .slider-content {
         width: 100%;
@@ -276,30 +274,6 @@ section#parallex-section.animate .wrap .second-cont {
     -moz-filter: hue-rotate(360deg);
     -ms-filter: hue-rotate(360deg);
     filter: hue-rotate(360deg); } }
-
-@media screen and (max-width: 768px) {
-    #Slider .slider-bg {
-        background-position: 10% 0; }
-    a.logo {
-        text-align: center;
-        display: table;
-        width: 100%;
-        padding: 1em 0; }
-    header .wrap { width: 100%; }
-    header nav ul li { display: block; }
-    header .header-left,
-    header .header-right { float: none; }
-    header .header-right ul li a:before { transform: none; }
-    .hamburger-menu {
-        width: 30px;
-        float: right;
-        position: absolute;
-        cursor: pointer;
-        top: 50%;
-        right: 25px;
-        transform: translateY(-50%);
-        opacity: .7; }
-}
 .blop-1,
 .blop-2,
 .blop-3 {
@@ -334,3 +308,58 @@ div.animate .blops .blop-2 {
     box-shadow: 0 19px 70px rgba( 0, 0, 0, .15 ); }
 div.animate .blops .blop-3 {
     box-shadow: 0 19px 70px rgba( 0, 0, 0, .15 ); }
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    section#Adjust { background: #dcd5c3 url('img/bg-2-phone.jpg') center bottom no-repeat !important; background-size: contain !important; padding-bottom: 100%; }
+    section#Control { background: #8eaf6a url('img/bg-3-phone.jpg') center bottom no-repeat !important; background-size: contain !important; padding-bottom: calc(100% + 60px); }
+    section#Control * { color: #000; }
+    section#Save { padding-top: 30px !important; background: url('img/bg-4-phone.jpg') center no-repeat !important; background-size: cover !important; }
+    section p:last-child {
+        margin-bottom: 30px !important;
+    }
+    section#Save p { margin-bottom: 100px !important; }
+    #Blops { display: none; }
+    #Blops-R { transform: translateY(-50%); margin-bottom: -50%; }
+    section { padding: 30px 0; }
+    #parallex-section {
+        display: none; }
+    #Slider .slider-bg {
+        background: url(img/slider-bg.jpg) center left no-repeat;
+        background-size: cover; }
+    #Slider .slider-bg .particles {
+        display: none; }
+    a.logo {
+        text-align: left;
+        display: table;
+        width: 100%;
+        padding: 1em; }
+    header .wrap { width: 100%; }
+    header nav ul li { display: block; }
+    header .header-left,
+    header .header-right { float: none; }
+    header .header-left ul li:last-child a { padding-bottom: 2em; }
+    header .header-right ul li a:before { transform: none; }
+    header nav div ul li a { font-size: 14px; line-height: 30px; display: block; }
+    header .header-right ul li a span { display: inline-block; margin: 1em 0 2em; }
+    .hamburger-menu {
+        width: 30px;
+        float: right;
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        right: 25px;
+        transform: translateY(-50%);
+        opacity: .7; }
+    footer {
+        background: #FFF; }
+    .footer {
+        background: url('img/bg-footer-phone.jpg') center !important;
+        background-size: cover !important; }
+    footer p a {
+        margin-top: 1em;
+        display: block; }
+}
