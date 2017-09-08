@@ -54,7 +54,7 @@ function initBt1() {
 }
 
 jQuery(document).ready(function($){
-    $('svg .cls-1').delay(100).css('transform', 'unset');
+    $('svg .cls-1, .device').delay(100).css('transform', 'unset');
     $('svg .cls-2').delay(100).css('stroke-dashoffset', '0');
     $('.hamburger-menu').on('click', function(){
         $('.header-menu').toggleClass('hidden');
