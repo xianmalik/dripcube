@@ -341,21 +341,26 @@ div.animate .blops .blop-3 {
     section p:last-child { margin-bottom: 30px !important; }
     section#Save p { margin-bottom: 100px !important; }
     #Slider img { display: none; }
-    #Slider h1 {
-        margin-top: 0;
-    }
     #Slider {
         min-height: 100vh;
         max-height: unset !important;
-        padding: 200px 0 0; }
+        padding: 200px 0 0;
+        height: auto; }
     #Blops { display: none; }
     #Blops-R { transform: translateY(-50%); margin-bottom: -50%; }
     section { padding: 30px 0; }
     #parallex-section {
         display: none; }
-    #Slider { height: auto; }
+    #Slider .slider-content .wrap {
+        display: block; }
+    #Slider .slider-content h1 {
+        font-size: 28px;
+        line-height: 28px;
+        margin-top: 0; }
+    #Slider .slider-content {
+        padding-top: 50%; }
     #Slider .slider-bg {
-        background: url(img/slider-bg.jpg) center no-repeat;
+        background: url(img/slider-bg.jpg) 20% center no-repeat;
         background-size: cover; }
     #Slider .slider-bg .particles {
         display: none; }
