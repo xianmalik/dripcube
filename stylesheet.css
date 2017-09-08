@@ -102,6 +102,25 @@ header {
             #Slider .particles {
                 height: 100%;
                 width: 100%; }
+                #Slider a {
+                    -webkit-font-smoothing: antialiased;
+                    color: #38383A;
+                    background: #FFF;
+                    border: none;
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 70px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    padding: 0 5em;
+                    margin: 1em 0 0;
+                    letter-spacing: .2em;
+                    text-decoration: none;
+                    user-select: none;
+                    transition: all 1s ease;
+                    box-shadow: 0 40px 120px rgba(0,0,0,0.15); }
+                    #Slider a:hover {
+                        box-shadow: 0 0 0 rgba(0,0,0,0); }
 /*            #Slider .particle-1 {
                 width: 25%;
                 height: auto;
@@ -312,21 +331,28 @@ div.animate .blops .blop-3 {
 @media screen and (max-width: 768px) {
     h2 {
         font-size: 28px;
-        line-height: 32px;
-    }
+        line-height: 32px; }
     section#Adjust { background: #dcd5c3 url('img/bg-2-phone.jpg') center bottom no-repeat !important; background-size: contain !important; padding-bottom: 100%; }
     section#Control { background: #8eaf6a url('img/bg-3-phone.jpg') center bottom no-repeat !important; background-size: contain !important; padding-bottom: calc(100% + 60px); }
     section#Control * { color: #000; }
     section#Save { padding-top: 30px !important; background: url('img/bg-4-phone.jpg') center no-repeat !important; background-size: cover !important; }
-    section p:last-child {
-        margin-bottom: 30px !important;
-    }
+    section p:last-child { margin-bottom: 30px !important; }
     section#Save p { margin-bottom: 100px !important; }
-    #Blops { display: none; }
+    #Slider img { 
+        padding: 30px 0 0 0;
+        width: 70%; }
+    #Slider h1 {
+        margin-top: 0;
+    }
+    #Slider {
+        height: auto;
+        max-height: unset !important;
+        padding: 80px 0; }
     #Blops-R { transform: translateY(-50%); margin-bottom: -50%; }
     section { padding: 30px 0; }
     #parallex-section {
         display: none; }
+    #Slider { height: auto; }
     #Slider .slider-bg {
         background: url(img/slider-bg.jpg) center left no-repeat;
         background-size: cover; }

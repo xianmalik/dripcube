@@ -1,7 +1,7 @@
 function getRandom(min, max){
   return Math.random() * (max - min) + min;
 }
-initBt1();
+// initBt1();
 
 // Button 1
 function initBt1() {
@@ -54,6 +54,9 @@ function initBt1() {
 }
 
 jQuery(document).ready(function($){
+    if( $(window).width() <= 768 ){
+        $('#Slider .col.col-6 img').prependTo( $('#Slider .col.col-6:first-child') );
+    }
     $('svg .cls-1').delay(100).css('transform', 'unset');
     $('svg .cls-2').delay(100).css('stroke-dashoffset', '0');
     $('.hamburger-menu').on('click', function(){
