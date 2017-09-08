@@ -338,23 +338,22 @@ div.animate .blops .blop-3 {
     section#Save { padding-top: 30px !important; background: url('img/bg-4-phone.jpg') center no-repeat !important; background-size: cover !important; }
     section p:last-child { margin-bottom: 30px !important; }
     section#Save p { margin-bottom: 100px !important; }
-    #Slider img { 
-        padding: 30px 0 0 0;
-        width: 70%; }
+    #Slider img { display: none; }
     #Slider h1 {
         margin-top: 0;
     }
     #Slider {
-        height: auto;
+        min-height: 100vh;
         max-height: unset !important;
-        padding: 80px 0; }
+        padding: 200px 0 0; }
+    #Blops { display: none; }
     #Blops-R { transform: translateY(-50%); margin-bottom: -50%; }
     section { padding: 30px 0; }
     #parallex-section {
         display: none; }
     #Slider { height: auto; }
     #Slider .slider-bg {
-        background: url(img/slider-bg.jpg) center left no-repeat;
+        background: url(img/slider-bg.jpg) center no-repeat;
         background-size: cover; }
     #Slider .slider-bg .particles {
         display: none; }
