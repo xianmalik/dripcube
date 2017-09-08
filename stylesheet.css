@@ -359,9 +359,9 @@ div.animate .blops .blop-3 {
         line-height: 28px;
         margin-top: 0; }
     #Slider .slider-content {
-        padding-top: 50%; }
+        padding-top: 35%; }
     #Slider .slider-bg {
-        background: url(img/slider-bg.jpg) 20% center no-repeat;
+        background: url(img/slider-bg.jpg) 80% center no-repeat;
         background-size: cover; }
     #Slider .slider-bg .particles {
         display: none; }
