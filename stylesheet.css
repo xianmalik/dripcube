@@ -93,6 +93,7 @@ header {
             overflow: visible;
             display: flex;
             align-items: center; }
+        #Slider img { padding-left: 100px; }
         #Slider h1 {
             font-size: 48px;
             line-height: 48px;
