@@ -335,7 +335,7 @@ div.animate .blops .blop-3 {
         font-size: 28px;
         line-height: 32px; }
     section#Adjust { background: #dcd5c3 url('img/bg-2-phone.jpg') center bottom no-repeat !important; background-size: contain !important; padding-bottom: 100%; }
-    section#Control { background: #8eaf6a url('img/bg-3-phone.jpg') center bottom no-repeat !important; background-size: contain !important; padding-bottom: calc(100% + 60px); }
+    section#Control { background: #f7e7cd url('img/bg-3-phone.jpg') center bottom no-repeat !important; background-size: contain !important; padding-bottom: calc(100% + 60px); }
     section#Control * { color: #000; }
     section#Save { padding-top: 30px !important; background: url('img/bg-4-phone.jpg') center no-repeat !important; background-size: cover !important; }
     section p:last-child { margin-bottom: 30px !important; }
