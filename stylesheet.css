@@ -109,8 +109,8 @@ header {
                 width: 100%; }
                 #Slider a {
                     -webkit-font-smoothing: antialiased;
-                    color: #38383A;
-                    background: #FFF;
+                    color: #FFF;
+                    background: #00a6eb;
                     border: none;
                     display: inline-block;
                     font-size: 12px;
@@ -178,18 +178,18 @@ footer {
 
 .button-drop,
 .button-drop .button-bg {
+  color: #38383A;
+  background: #FFF;
   -webkit-font-smoothing: antialiased;
-  color: #FFF;
-  background: #00a6eb;
   border: none;
   display: inline-block;
   font-size: 12px;
-  line-height: 50px;
+  line-height: 70px;
   font-weight: 400;
   letter-spacing: .2em;
   text-decoration: none;
   user-select: none;
-  padding: 0 3em;
+  padding: 0 5em;
   box-shadow: 0px 20px 47.5px 2.5px rgba(0, 0, 0, 0.04);
   text-transform: uppercase; }
 
