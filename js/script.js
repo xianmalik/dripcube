@@ -65,20 +65,20 @@ jQuery(document).ready(function($){
         }
         if( $(window).width() > 768 ){
             var elem = $('#parallex-section');
+            
             var scrollPos = $(window).scrollTop() - elem.offset().top,
-                scrollEnd = elem.offset().top + elem.height() - elem.find('.wrap').height() - 140;
-                console.log(elem.find('.wrap').height());
+                scrollEnd = elem.offset().top + elem.height() - elem.find('.parallex-content').height() - 100;
             if( scrollPos > 0  && scrollPos <= scrollEnd){
-                elem.addClass("active").find('.wrap').css('transform', 'translateY(' + scrollPos + 'px)');
+                elem.addClass("active").find('.parallex').css('transform', 'translateY(' + scrollPos + 'px)');
                 if( scrollPos > elem.height()/2 ){
                     elem.addClass('animate');
                 } else {
                     elem.removeClass('animate');
                 }
             } else if( scrollPos <= 0 ){
-                elem.removeClass("active").find('.wrap').css('transform', 'translateY(0)');
+                elem.removeClass("active").find('.parallex').css('transform', 'translateY(0)');
             } else {
-                elem.removeClass("active").find('.wrap').css('transform', 'translateY('+scrollEnd+'px)');
+                elem.removeClass("active").find('.parallex').css('transform', 'translateY('+scrollEnd+'px)');
             }
         }
     });

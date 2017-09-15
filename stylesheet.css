@@ -4,7 +4,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 #Slider svg {
-    height: 100%; }
+    min-height: 100%;
+    min-width: 100%; }
 body {
     font-family: 'Open Sans', sans-serif;
     background: #fafafa; }
@@ -251,27 +252,9 @@ footer {
       bottom: 40%;
       right: 27%; }
 
-section#parallex-section {
-    background-repeat: no-repeat;
-    min-height: 300vh;
-    padding: 0 0 100vh;
-    background-size: contain !important;
-    background-position: center 0% !important; }
 section#parallex-section .wrap {
     min-height: 100vh;
-    display: block;
-    background-image: url('img/bg-1.jpg'); }
-section#parallex-section.animate .wrap .first-cont,
-section#parallex-section .wrap .second-cont {
-    position: absolute;
-    opacity: 0; }
-section#parallex-section .wrap .first-cont,
-section#parallex-section.animate .wrap .second-cont {
-    position: relative;
-    opacity: 1; }
-section#parallex-section:not(.animate) .wrap .first-cont,
-section#parallex-section.animate .wrap .second-cont {
-    transition: opacity 1s ease; }
+    display: block; }
 .sliding-screens {
     background: url('img/schedule-phone-wrap.png') center no-repeat;
     background-size: contain !important;
