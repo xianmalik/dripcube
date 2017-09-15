@@ -400,4 +400,6 @@ div.animate .blops .blop-3 {
     footer p a {
         margin-top: 1em;
         display: block; }
+    .slider-bg {
+      opacity: 1;}
 }
