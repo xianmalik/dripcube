@@ -59,6 +59,10 @@ header {
             header .header-right ul li a {
                 z-index: 1;
                 padding-right: 0; }
+                header .header-right ul li:first-child a {
+                    font-weight: 800 !important; }
+                header .header-right ul li:last-child a {
+                    text-transform: uppercase; }
             header .header-right ul li a span {
                 color: #FFF;
                 padding: .8em 1.5em;
