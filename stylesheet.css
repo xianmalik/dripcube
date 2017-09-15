@@ -3,7 +3,8 @@
 *:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-
+#Slider svg {
+    height: 100%; }
 body {
     font-family: 'Open Sans', sans-serif;
     background: #fafafa; }
