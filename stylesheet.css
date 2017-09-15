@@ -55,8 +55,7 @@ header {
                 color: #38383A;
                 line-height: 80px;
                 padding: 0 15px;
-                font-size: 12px;
-                letter-spacing: .1em; }
+                font-size: 12px; }
             header .header-right ul li a {
                 z-index: 1;
                 padding-right: 0; }
