@@ -100,10 +100,11 @@ header {
         #Slider h1 {
             font-size: 60px;
             line-height: 1.1em;
-            color: #00a6eb;
+            color: #393c40;
             font-weight: 400;
             opacity: .9;
-            margin: 0 0 .5em; }
+            margin: 0 0 .5em;
+            letter-spacing: -3px; }
         #Slider .slider-content p {
             opacity: .7; }
             #Slider .particles {
