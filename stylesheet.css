@@ -99,6 +99,7 @@ header {
             font-size: 48px;
             line-height: 48px;
             color: #00a6eb;
+            font-weight: 300;
             opacity: .9; }
         #Slider .slider-content p {
             opacity: .7; }
