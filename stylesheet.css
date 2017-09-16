@@ -7,25 +7,25 @@
     min-height: 100%;
     min-width: 100%; }
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: #fafafa; }
 .content-wrap {
-    /*box-shadow: 0 0 20px 5px rgba(0, 0, 0, .05);*/
     background: #fff; }
 p {
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
     margin: 0 0 1em;
-    color: #141415; }
+    color: #474747; }
 ul {
     padding: 0;
     margin: 0; }
 h2 {
     font-size: 48px;
-    line-height: 48px;
-    font-weight: 300;
-    margin: 0 0 .5em; }
+    line-height: 54px;
+    font-weight: 100;
+    margin: 0 0 .5em;
+    color: #00a6eb; }
 section {
     padding: 150px 0 180px;
     background-size: cover; }
@@ -86,7 +86,7 @@ header {
         height: 100%;
         width: 100%; }
         #Slider .slider-bg {
-            background: #FFFFFF linear-gradient(to right, #f11370, #fb8a00);
+            background: #cbe2ec;
             background-size: cover;
             opacity: .1; }
     #Slider .slider-content {
@@ -100,13 +100,12 @@ header {
             align-items: center; }
         #Slider img { padding-left: 100px; }
         #Slider h1 {
-            font-size: 60px;
+            font-size: 40px;
             line-height: 1.1em;
             color: #393c40;
-            font-weight: 400;
+            font-weight: 100;
             opacity: .9;
-            margin: 0 0 .5em;
-            letter-spacing: -3px; }
+            margin: 0 0 .5em; }
         #Slider .slider-content p {
             opacity: .7; }
             #Slider .particles {
