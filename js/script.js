@@ -65,11 +65,15 @@ jQuery(document).ready(function($){
         }
         if( $(window).width() > 768 ){
             var elem = $('#parallex-section');
-            
+
             var scrollPos = $(window).scrollTop() - elem.offset().top,
-                scrollEnd = elem.offset().top + elem.height() - elem.find('.parallex-content').height() - 100;
+                pHeight = $(window).height()*3/25,
+                scrollEnd = elem.height() - $(window).height();
             if( scrollPos > 0  && scrollPos <= scrollEnd){
                 elem.addClass("active").find('.parallex').css('transform', 'translateY(' + scrollPos + 'px)');
+                if(scrollPos > scrollEnd - pHeight ) {
+                    elem.find('.sliding-screens.parallex').css('transform', 'translateY('+ (scrollEnd-pHeight) +'px)');
+                }
                 if( scrollPos > elem.height()/2 ){
                     elem.addClass('animate');
                 } else {
@@ -78,7 +82,8 @@ jQuery(document).ready(function($){
             } else if( scrollPos <= 0 ){
                 elem.removeClass("active").find('.parallex').css('transform', 'translateY(0)');
             } else {
-                elem.removeClass("active").find('.parallex').css('transform', 'translateY('+scrollEnd+'px)');
+                elem.removeClass("active").find('img.parallex').css('transform', 'translateY('+scrollEnd+'px)');
+                elem.find('.sliding-screens.parallex').css('transform', 'translateY('+ (scrollEnd-pHeight) +'px)')
             }
         }
     });
