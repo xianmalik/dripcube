@@ -109,6 +109,7 @@ header {
             opacity: .9;
             margin: 0 0 .5em; }
         #Slider .slider-content p {
+            font-size: 22px;
             opacity: .7; }
             #Slider .particles {
                 height: 100%;
@@ -323,13 +324,15 @@ div.animate .blops .blop-2 {
 div.animate .blops .blop-3 {
     box-shadow: 0 19px 70px rgba( 0, 0, 0, .15 ); }
 
+@media screen and (max-width: 900px) {
+    section#Adjust { padding: 100px 0 !important; } }
 @media screen and (max-width: 768px) {
     h2 {
         font-size: 28px;
         line-height: 32px; }
     #Create h2 {
         color: #FFF; }
-    section#Adjust { background: #dcd5c3 url('img/bg-2-phone.jpg') center bottom no-repeat !important; background-size: contain !important; padding-bottom: 100%; }
+    section#Adjust { background: #dcd5c3 url('img/bg-2-phone.jpg') center bottom no-repeat !important; background-size: contain !important; }
     section#Control { background: #f7e7cd url('img/bg-3-phone.jpg') center bottom no-repeat !important; background-size: contain !important; padding-bottom: calc(100% + 60px); }
     section#Control * { color: #000; }
     section#Save { padding-top: 30px !important; background: url('img/bg-4-phone.jpg') center no-repeat !important; background-size: cover !important; }
