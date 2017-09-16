@@ -321,6 +321,8 @@ div.animate .blops .blop-3 {
     h2 {
         font-size: 28px;
         line-height: 32px; }
+    #Create h2 {
+        color: #FFF; }
     section#Adjust { background: #dcd5c3 url('img/bg-2-phone.jpg') center bottom no-repeat !important; background-size: contain !important; padding-bottom: 100%; }
     section#Control { background: #f7e7cd url('img/bg-3-phone.jpg') center bottom no-repeat !important; background-size: contain !important; padding-bottom: calc(100% + 60px); }
     section#Control * { color: #000; }
@@ -348,7 +350,8 @@ div.animate .blops .blop-3 {
         padding-top: 35%; }
     #Slider .slider-bg {
         background: url(img/slider-bg.jpg) 80% center no-repeat;
-        background-size: cover; }
+        background-size: cover;
+        opacity: 1; }
     #Slider .slider-bg .particles {
         display: none; }
     a.logo {
