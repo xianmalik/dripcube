@@ -65,16 +65,15 @@ jQuery(document).ready(function($){
         }
         if( $(window).width() > 768 ){
             var elem = $('#parallex-section');
-
             var scrollPos = $(window).scrollTop() - elem.offset().top,
-                pHeight = $(window).height()/15,
+                pHeight = $(window).height()/50,
                 scrollEnd = elem.height() - $(window).height();
             if( scrollPos > 0  && scrollPos <= scrollEnd){
                 elem.addClass("active").find('.parallex').css('transform', 'translateY(' + scrollPos + 'px)');
                 if(scrollPos > scrollEnd - pHeight ) {
                     elem.find('.sliding-screens.parallex').css('transform', 'translateY('+ (scrollEnd-pHeight) +'px)');
                 }
-                if( scrollPos > elem.height()/2 ){
+                if( scrollPos > elem.outerHeight()*2/5 ){
                     elem.addClass('animate');
                 } else {
                     elem.removeClass('animate');
