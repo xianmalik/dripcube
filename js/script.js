@@ -67,7 +67,7 @@ jQuery(document).ready(function($){
             var elem = $('#parallex-section');
 
             var scrollPos = $(window).scrollTop() - elem.offset().top,
-                pHeight = $(window).height()*3/25,
+                pHeight = $(window).height()/15,
                 scrollEnd = elem.height() - $(window).height();
             if( scrollPos > 0  && scrollPos <= scrollEnd){
                 elem.addClass("active").find('.parallex').css('transform', 'translateY(' + scrollPos + 'px)');

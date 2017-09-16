@@ -255,10 +255,7 @@ section#parallex-section .wrap {
     min-height: 100vh;
     display: block; }
 .sliding-screens {
-    background: url('img/schedule-phone-wrap.png') center no-repeat;
-    background-size: contain !important;
     display: inline-block;
-    padding: 11% 3.5% 14%;
     position: relative; }
     .sliding-screens .screens-wrap {
         overflow: hidden; }
@@ -268,11 +265,11 @@ section#parallex-section .wrap {
         position: absolute;
         left: 0;
         top: 0;
-        transform: translateX(100%); }
+        opacity: 0; }
     section.animate .sliding-screens div.first-screen {
-        transform: translateX(-100%); }
+        opacity: 0; }
     section.animate .sliding-screens div.second-screen {
-        transform: translateX(0); }
+        opacity: 1; }
 
 @keyframes hue-rotate {
   from {
